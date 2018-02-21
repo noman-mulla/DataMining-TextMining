@@ -1,0 +1,12 @@
+Frequent 1-itemsets
+
+    6 : {70}
+    7 : {20}
+
+    Total number of frequent 1-itemsets = 2
+
+
+Frequent 1-itemsets
+	6 : { 70 }
+	7 : { 20 }
+	Total number of frequent 1-itemsets = 2
