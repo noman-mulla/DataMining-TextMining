@@ -19,13 +19,9 @@ Tailcount = 32
 Tailcount = 26
     15 : {30, 60}
 Tailcount = 32
-    16 : {20, 60}
-Tailcount = 32
     26 : {70, 50}
 Tailcount = 40
-    32 : {60, 50}
-Tailcount = 40
 
-    Total number of frequent 2-itemsets = 7
+    Total number of frequent 2-itemsets = 5
 
 
