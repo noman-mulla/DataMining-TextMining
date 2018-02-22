@@ -114,7 +114,7 @@ def MS_candidate_gen(f,supp,max_sup_diff,sorted_m):
     for f1 in f:
         for i in range(f.index(f1)+1,len(f)):
             f2 = f[i]
-            if f2[:len(f2)-1] == f1[:len(f1)-1] and len(set(f1).union(f2)) == (len(f1)+1) and f1[len(f1)-1] != f2[len(f2)-1]:
+            if f2[:len(f2)-1] == f1[:len(f1)-1] and f1[len(f1)-1] != f2[len(f2)-1]:
                 if supp[f1[len(f1)-1]] - supp[f2[len(f2)-1]] <= max_sup_diff:
                     mis_f1 = [m[1] for m in sorted_m if m[0] == f1[len(f1)-1]]
                     mis_f2 = [m[1] for m in sorted_m if m[0] == f2[len(f2)-1]]
