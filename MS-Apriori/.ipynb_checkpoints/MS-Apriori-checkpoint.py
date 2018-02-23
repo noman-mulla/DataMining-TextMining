@@ -329,7 +329,6 @@ def display(output_file,F,count_list,tail_list):
 
     if len(F) == 0 and freq_no < 1:
         freq_no = freq_no + 1
-        out_file.write(('savio randi\n'))
         out_file.write(('Frequent ' + str(freq_no) + '-itemsets\n'))
         out_file.write("\n\n    Total number of frequent "+ str(freq_no) + "-itemsets = " + str(len(F)) + "\n\n\n")
 
