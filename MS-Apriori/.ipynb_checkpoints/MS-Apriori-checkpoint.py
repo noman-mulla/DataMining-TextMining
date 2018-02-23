@@ -316,8 +316,20 @@ def genSubSets(s):
 def display(output_file,F,count_list,tail_list):
     out_file = open(output_file, 'w')
     freq_no = 0
-    if len(F) == 0:
+    i=0
+    for f in F:
+        if not f:
+            del(F[i])
+            del(count_list[i])
+            del(tail_list[i])
+        i=i+1
+    
+    print(F)
+    i=0
+
+    if len(F) == 0 and freq_no < 1:
         freq_no = freq_no + 1
+        out_file.write(('savio randi\n'))
         out_file.write(('Frequent ' + str(freq_no) + '-itemsets\n'))
         out_file.write("\n\n    Total number of frequent "+ str(freq_no) + "-itemsets = " + str(len(F)) + "\n\n\n")
 
@@ -326,18 +338,17 @@ def display(output_file,F,count_list,tail_list):
         out_file.write(('Frequent ' + str(freq_no) + '-itemsets\n'))
         index = 0
         for f in F[k]:
-            if k == 0:
-                out_file.write('\n    ' + str(count_list[0][F[k].index(f)]) + ' : {' + str(f[k]) + '}')
-            else:
-                tail_count = 0
-                count = 0
-                tail_count = tail_list[k]
-                count = count_list[k]
-                out_file.write("\n    " + str(count[index]) + " : " + '{' + ', '.join(f) + '}')
-                out_file.write("\nTailcount = " + str(tail_count[index]))
-                index = index + 1
+                if k == 0:
+                    out_file.write('\n    ' + str(count_list[0][F[k].index(f)]) + ' : {' + str(f[k]) + '}')
+                else:
+                    tail_count = 0
+                    count = 0
+                    tail_count = tail_list[k]
+                    count = count_list[k]
+                    out_file.write("\n    " + str(count[index]) + " : " + '{' + ', '.join(f) + '}')
+                    out_file.write("\nTailcount = " + str(tail_count[index]))
+                    index = index + 1
         out_file.write("\n\n    Total number of frequent "+ str(freq_no) + "-itemsets = " + str(len(F[k])) + "\n\n\n")
-
         
 if __name__ == "__main__" :
     transaction_file = argv[1]

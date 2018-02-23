@@ -38,9 +38,3 @@ Tailcount = 26
     Total number of frequent 3-itemsets = 4
 
 
-Frequent 4-itemsets
-
-
-    Total number of frequent 4-itemsets = 0
-
-
