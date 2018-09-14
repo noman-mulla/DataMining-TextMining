@@ -49,5 +49,5 @@ MIS(48) = 0.5
 MIS(49) = 0.5
 MIS(50) = 0.5
 SDC = 0.2
-cannot_be_together: {6, 17, 28, 37}
-must-have: 2 or 4 or 6 or 10 or 11 or 16 or 17 or 19 or 23 or 26 or 28 or 32 or 33 or 37 or 39 or 40 or 43 or 47
+cannot_be_together: {6, 28}
+must-have: 2 or 3 or 4 or 5 or 6 or 10 or 11 or 16 or 17 or 19 or 23 or 26 or 28 or 32 or 33 or 37 or 39 or 40 or 43 or 4

@@ -7,5 +7,5 @@ MIS(60) = 0.70
 MIS(70) = 0.60
 MIS(80) = 0.20
 SDC = 0.5
-cannot_be_together: {20, 50, 60}
-must-have: 20 or 30 or 50 or 60 or 80
+cannot_be_together: {20, 50}
+must-have: 10 or 20 or 30 or 40 or 50 or 60 or 70 or 80
